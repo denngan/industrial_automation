@@ -1,4 +1,3 @@
-
 ## Chapter 1
 
 
@@ -8,7 +7,7 @@
 * processes: continuous vs batch
 * control: open loop vs closed loop
 
-### Questions
+### Exam Questions
 
 1. **What are the two principal kinds of plants, the way of modeling them and of controlling them?**
 
