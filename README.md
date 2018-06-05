@@ -9,11 +9,12 @@ For more information and chapter slides visit the course's [moodle page](https:/
 The course consits of 7 chapters (chapter 1-6 and chapter 7):
 
 * Chapter 1: Automation Overview
-* Chapter 2: 
-* Chapter 3: 
-* Chapter 4:
-* Chapter 5:
-* Chapter 6:
+* Chapter 2: Sensors, Actuators and Control
+* Chapter 3: Communication Networks 
+* Chapter 4: Device Access - Application Layer Protocols
+* Chapter 5: Supervision 
+* Chapter 6: Real Time
+* Chapter 9: Dependability
 
 
 ### Exam
