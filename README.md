@@ -1,8 +1,24 @@
 ## EPFL - Industrial Automation
 
-This side is supposed to support the exam preparation for the EPFL course **Industrial Automation**
+This site is supposed to support the exam preparation for the EPFL course **Industrial Automation**. 
+For more information and chapter slides visit the course's [moodle page](https://moodle.epfl.ch/course/view.php?id=14114).
 
-### Exam Conditions
+
+### Course Structure
+
+The course consits of 7 chapters (chapter 1-6 and chapter 7):
+
+* Chapter 1: Automation Overview
+* Chapter 2: 
+* Chapter 3: 
+* Chapter 4:
+* Chapter 5:
+* Chapter 6:
+
+
+### Exam
+
+#### Exam Conditions
 
 The exam comprises the course as it is downloadable as power point slides and/or pdf on Moodle on May 31st, 2018. There will be no change to the slides after that date.  
  
@@ -12,7 +28,19 @@ You are allowed to bring two handwritten A4 sheets to the exam but no electronic
  
 *2018.06.01 Y.A. Pignolet and J.C. Tournier*
 
-### Exam Quetions
+
+#### Answering Exam Questions
+
+To answer questions in the exam you should be able to follow the following three steps:
+
+1. Understand all technical terms in or connected to the question and be able to define them first if necessary
+2. Answer the actual question theoretically
+3. Be able to give examples to show practical understanding of concepts
+
+
+#### Exam Quetions
+
+The list of possible exam questions can be found either below or on moodle.
 
 1. What are the two principal kinds of plants, the way of modeling them and of controlling them? 
 2. What are the principal categories of processes? Give examples.  
