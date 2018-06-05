@@ -4,7 +4,7 @@
 @import "{{ site.theme }}";
 
 .head_new {
-  color: white;
+  color: white !important;
   text-decoration: none;
 
   &:hover {
