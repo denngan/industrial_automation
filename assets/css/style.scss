@@ -1,0 +1,13 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.head_new {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+
+  }
