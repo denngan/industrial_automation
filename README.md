@@ -32,7 +32,7 @@ You are allowed to bring two handwritten A4 sheets to the exam but no electronic
 
 #### Answering Exam Questions
 
-To answer questions in the exam you should be able to follow the following three steps:
+To answer questions in the exam the following approach can be useful:
 
 1. Understand all technical terms in or connected to the question and be able to define them first if necessary
 2. Answer the actual question theoretically
