@@ -4,8 +4,7 @@
 
 * sensors and actuators
 * precision vs accuracy
-* Measuring Displacements
-* Measuring Temperature
+* Measuring Displacements* Measuring Temperature
 * P&ID - Instrumentation Diagrams
 
 ### Exam Questions
@@ -25,6 +24,7 @@ Q64. **What are the main families of temperature sensors?**
 Q65. **Explain the principle of a cold box junction.**
 
 Q66. **What is a P&ID?**
+
 ## Chapter 2.2 - Control And Field Level Devices
 
 ### Keywords
@@ -79,5 +79,5 @@ Q21. **Program a simple example in FBD (e.g. a saw tooth generator, a sine wave 
 
 Q22. **Program a simple sequence in SFC (e.g. a recipe, a coffee dispenser)**
 
-23. **How is a program executed on a PLC and how does it ensure its real time behavior?**
+Q23. **How is a program executed on a PLC and how does it ensure its real time behavior?**
 
