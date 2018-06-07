@@ -64,23 +64,33 @@ Q89. **How is the availability of a system that has a 2oo3 structure with repair
 Q90. **Set up the calculation for the availability of a system given its Markov Diagram.**
 
 
-## Chapter 9.4
+## Chapter 9.4 - Dependable Architectures
 
 ### Keywords
 
+* computer architectures. integer, persistent
+* error detection: online, offline, absolute, relative
+* workby vs standby redundancy
+* byzantine fault
 
 ### Exam Questions
 
-91. **Explain/describe the following dependable computer architectures: integer, persistent, integer & persistent.**
-92. **Present a classification of the different error detection methods.**
-93. **Illustrate the principles of workby and standby redundancy approaches in the case of a network protocol.**
-94. **What are the main issues of workby redundant architectures? How are they solved?**
-95. **What are the main issues of standby redundant architectures? How are they solved?**
-96. **What are byzantine faults?**
-97. **Explain different examples of voters in the context of input matching.**
+Q91. **Explain/describe the following dependable computer architectures: integer, persistent, integer & persistent.**
+
+Q92. **Present a classification of the different error detection methods.**
+
+Q93. **Illustrate the principles of workby and standby redundancy approaches in the case of a network protocol.**
+
+Q94. **What are the main issues of workby redundant architectures? How are they solved?**
+
+Q95. **What are the main issues of standby redundant architectures? How are they solved?**
+
+Q96. **What are byzantine faults?**
+
+Q97. **Explain different examples of voters in the context of input matching.**
 
 
-## Chapter 9.5
+## Chapter 9.6 - Safety Evaluation
 
 ### Keywords
 
@@ -90,6 +100,8 @@ Q90. **Set up the calculation for the availability of a system given its Markov 
 
 ### Exam Questions
 
-98. **Explain the main principles of FMEA and FTA.**
-99. **What is the difference between FMEA and FMECA?**
-100. **In the context of safety function, what does SIL mean? What is the highest level?**
+Q98. **Explain the main principles of FMEA and FTA.**
+
+Q99. **What is the difference between FMEA and FMECA?**
+
+Q100. **In the context of safety function, what does SIL mean? What is the highest level?**
