@@ -5,7 +5,7 @@
 * SNMP
 * MMS
 * OPC: Data Access (DA), Alarms and Events (AE), Historical Data Access (HDA)
-* *Manufacturing Execution System
+* *Manufacturing Execution System*
 
 ### Exam Questions
 
