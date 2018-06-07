@@ -27,6 +27,19 @@
 
 2. **What are the principal categories of processes? Give examples.**
 
+> **terms:** process
+>
+> **continuous vs batch process**  
+>
+> *batch:* discrete processes, handling individual elements/modules  
+>   control task: command (control state transitions)  
+>   open-loop control
+>
+> *continuous:* continuous flow of material or energy  
+>   control task: regulation (maintain state on a determined level or trajectory)  
+>   closed-loop control
+>
+> **examples:** batch - numerically controlled machine, packaging, bottle filling, manufacturing, chemical process; continuous - motor control, cement, glass, paper production, newspapers (everything with a flow of material, e.g. 90 m/s)
 
 
 3. **To which category do the following applications belong: production of cement, chocolate packaging, traffic lights of crossroads, waste water, bottle-filling, power plant, pulp&paper and which effect does the plant have on the operation of the automation system?**
