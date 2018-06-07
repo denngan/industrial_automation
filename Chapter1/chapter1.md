@@ -62,6 +62,27 @@ Q3. **To which category do the following applications belong: production of ceme
 
 Q4. **List the layers in a control system and their functions. How are the response time and the complexity of the decisions related to each other?**
 
+>**terms:** control system
+>
+> ERP (Enterprise Response Planning) - production planning, orders, coordinate sites *months*  
+> MES (Manufacturing Execution System) - manage resources, workflow, production scheduling, maintainance *days*  
+> Supervision - supervise production, optimize, log, store *minutes*  
+> Group control - control part of plant *seconds*  
+> Unit/Individual control - control part of group (single unit) *seconds*  
+> Field - interaction with sensors/actuators, data aquisition and transmission *milliseconds*  
+>
+> The more technical and smaller it gets the simpler the decisions and actions. Hence, short reaction time. 
+> the higher the level the more complex the desicions become becasue they influence many plans and are also correlated to other factors like business strategies, board meetings and so on. So the response time is getting bigger. That is also because with higher complexity more people get involved, who therefore respond slower than just machines.
+
 Q5. **Draw the hierarchy of an automation system with its communication networks and characterize the traffic.**
 
 Q6. **What is the difference between a centralized and a distributed control system? What are their advantages and disadvantages?**
+
+
+>**terms:** control system
+>
+> *Centralized:* Central Computer monitores and forwards commands to the PLCs.  
+> *Decentralized:* All controllers can communicate as peers (without going through master); the vertical communication is hierarchical
+>
+>
+> 
