@@ -58,3 +58,10 @@ Q3. **To which category do the following applications belong: production of ceme
 > bottle filling, chocolate packaging
 >
 > **examples:** discrete - lift, robot, traffic lights; continuous - oven, plane, car, chemical reactor
+
+
+Q4. **List the layers in a control system and their functions. How are the response time and the complexity of the decisions related to each other?**
+
+Q5. **Draw the hierarchy of an automation system with its communication networks and characterize the traffic.**
+
+Q6. **What is the difference between a centralized and a distributed control system? What are their advantages and disadvantages?**
