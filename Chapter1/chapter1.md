@@ -13,14 +13,17 @@
 
 > **terms:** plant, control
 >
-> discrete vs continuous plants
-> *discrete:* states well defined, non-overlapping; abrupt transitions caused by events. (binary variables - on/off) mainly reversible but not monotone (removing stimulus does not imply previous state)
->   model: Finite State Machines, Petri Nets, State Transition Tables, Sequential Flow charts etc.
->   control task: command (control state transitions)
+> **discrete vs continuous plants**  
 >
-> *continuous:* states described by continuous (analog) variables (temperature, voltage, speed); reversible: output can be brought back to previous value by ackting on input; monotone: increasing input causes output to react monotonous.
->   model: continuous function F(p)
->   control task: regulation (maintain state on a determined level or trajectory)
+> *discrete:* states well defined, non-overlapping; abrupt transitions caused by events. (binary variables - on/off) mainly reversible but not monotone (removing stimulus does not imply previous state)  
+>   model: Finite State Machines, Petri Nets, State Transition Tables, Sequential Flow charts etc.  
+>   control task: command (control state transitions)  
+>
+> *continuous:* states described by continuous (analog) variables (temperature, voltage, speed); reversible: output can be brought back to previous value by ackting on input; monotone: increasing input causes output to react monotonous.  
+>   model: continuous function F(p)  
+>   control task: regulation (maintain state on a determined level or trajectory)  
+>
+> **examples:** discrete - lift, robot, traffic lights; continuous - oven, plane, car, chemical reactor
 
 2. **What are the principal categories of processes? Give examples.**
 
