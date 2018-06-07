@@ -6,7 +6,7 @@ For more information and chapter slides visit the course's [moodle page](https:/
 
 ### Course Structure
 
-The course consits of 7 chapters (chapter 1-6 and chapter 7):
+The course consits of 7 chapters (chapter 1-6 and chapter 9):
 
 * Chapter 1: Automation Overview
 * Chapter 2: Sensors, Actuators and Control
