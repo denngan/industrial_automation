@@ -10,12 +10,19 @@
 ### Exam Questions
 
 Q59. **What is the difference between precision and accuracy for sensors?**
+
 Q60. **What is the precision of a sensor? How is it linked to the accuracy of a sensor?**
+
 Q61. **Explain the principle of a LVDT sensor (Linear Variable Differential Transformer).**
+
 Q62. **Explain the principle of a capacitive angular sensor.**
+
 Q63. **Explain the principles of strain gauges.**
+
 Q64. **What are the main families of temperature sensors?**
+
 Q65. **Explain the principle of a cold box junction.**
+
 Q66. **What is a P&ID?**
 
 ## Chapter 2.2 - Control And Field Level Devices
