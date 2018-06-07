@@ -9,7 +9,7 @@
 
 ### Exam Questions
 
-1. **What are the two principal kinds of plants, the way of modeling them and of controlling them?**
+Q1. **What are the two principal kinds of plants, the way of modeling them and of controlling them?**
 
 > **terms:** plant, control
 >
@@ -25,7 +25,7 @@
 >
 > **examples:** discrete - lift, robot, traffic lights; continuous - oven, plane, car, chemical reactor
 
-2. **What are the principal categories of processes? Give examples.**
+Q2. **What are the principal categories of processes? Give examples.**
 
 > **terms:** process
 >
@@ -42,4 +42,19 @@
 > **examples:** batch - numerically controlled machine, packaging, bottle filling, manufacturing, chemical process; continuous - motor control, cement, glass, paper production, newspapers (everything with a flow of material, e.g. 90 m/s)
 
 
-3. **To which category do the following applications belong: production of cement, chocolate packaging, traffic lights of crossroads, waste water, bottle-filling, power plant, pulp&paper and which effect does the plant have on the operation of the automation system?**
+Q3. **To which category do the following applications belong: production of cement, chocolate packaging, traffic lights of crossroads, waste water, bottle-filling, power plant, pulp&paper and which effect does the plant have on the operation of the automation system?**
+
+> **terms:** categories of application: process control, batch control, manufacturing
+>
+> **categories of application**  
+>
+> *process control:* continuous processes (flux, flows)  
+> power plant, cement, waste water, pulp and paper
+>
+> *batch control:* semi continuous processes (individual products)
+> traffic lights? (because traffic is a flow, but lights are discrete)
+>
+> *manufacturing:* discrete processes (transformation of parts, factory automation)
+> bottle filling, chocolate packaging
+>
+> **examples:** discrete - lift, robot, traffic lights; continuous - oven, plane, car, chemical reactor
