@@ -2,8 +2,9 @@
 
 ### Keywords
 
-* hard vs soft real time ...
-
+* hard vs soft real time
+* determinism vs non-determinism
+* task scheduling
 
 ### Exam Questions
 
