@@ -73,8 +73,16 @@ Q4. **List the layers in a control system and their functions. How are the respo
 >
 > The more technical and smaller it gets the simpler the decisions and actions. Hence, short reaction time. 
 > the higher the level the more complex the desicions become becasue they influence many plans and are also correlated to other factors like business strategies, board meetings and so on. So the response time is getting bigger. That is also because with higher complexity more people get involved, who therefore respond slower than just machines.
+>
+>**examples:** chocolate factory. ERP decides on new chocolate bar, MES orders more cocoa for the plant, Supervision: see how many bars per minute produced, group control: PLC controlling the white chocolate production parts, unit: PLC to open valve for tank, field. message to valve actuator to open
 
 Q5. **Draw the hierarchy of an automation system with its communication networks and characterize the traffic.**
+
+>**terms:** control system
+>
+>enterprise --- execution -*Data Network*- supervision -*Control Bus*- device access --- communication networks -*Field Bus*- field devices, controllers -*Field Bus*- sensors,actuators
+>
+>**example:** CEO or manager, MES system getting messages, emails; supervision, sending mails to coworkers or managers, SCADA communicates with controllers, sends status values; controller communicates with instruments, commands, or short status
 
 Q6. **What is the difference between a centralized and a distributed control system? What are their advantages and disadvantages?**
 
@@ -85,4 +93,4 @@ Q6. **What is the difference between a centralized and a distributed control sys
 > *Decentralized:* All controllers can communicate as peers (without going through master); the vertical communication is hierarchical
 >
 >
-> 
+
