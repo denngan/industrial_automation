@@ -38,6 +38,18 @@ Q66. **What is a P&ID?**
 
 Q7. **What is a controller and what is its purpose? What has to be taken into account when designing it?**
 
+>**terms:** controller
+>
+>*Controller:* controls plant to reach the preferred output;
+>  - measures states fromsensors
+>  - send commandsto actuators to stabilize output within useful time
+>
+>*Designing:* Plant to be controlled has to be known (how variables influence each other and the output)
+> - get a plant model through plant identification and specify all parameters (testing)
+> - still some disturbances from outer world possible
+>
+>**example:** controller wants to maintain speed with electrical motor. current could be proportional to speed. Find out with which factor.
+
 Q8. **How is a plant modelled? What is a process variable? What is the control output?**
 
 Q9. **What are the differences between modelling for continuous and discrete processes?**
