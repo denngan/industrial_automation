@@ -4,7 +4,8 @@
 
 * sensors and actuators
 * precision vs accuracy
-* Measuring Displacements* Measuring Temperature
+* Measuring Displacements
+* Measuring Temperature
 * P&ID - Instrumentation Diagrams
 
 ### Exam Questions
