@@ -52,12 +52,36 @@ Q7. **What is a controller and what is its purpose? What has to be taken into ac
 
 Q8. **How is a plant modelled? What is a process variable? What is the control output?**
 
->**
-> 
+>**terms:** plant, process variable
+>
+>*model of a plant:* modelled as a process with relations between parts of plant; correlation between input and output of the plant either as a function (continious) or state change (discrete)
+>
+>*process variable:* measured output from the plant's process, defines state of plant, influenced (~controlled) by control system.
+>
+>*control output:* command from controller; controller gets set-point (desired value of process variable) and meausured process var (as-is state). Based on the error (differents between desired and measured) the controller creates an output to stabilize the controll objective. (Feedback loop/closed loop control) Additionally disturbances have to be taken into account, as they also influence the process variable.
+>
+>**examples:** vebntilation system. process: fan cools the air based on fan speed (maybe proportional/exponential etc.); temperature - process var (fan speed too); controller output - command to make fan slower because room was colder than desired.
 
 Q9. **What are the differences between modelling for continuous and discrete processes?**
 
+>**terms:** contiuous, discrete process
+>
+>*continuous process:* analog variables (goal of control: keep level, trajectory); output modelled as function based on input; controlled variable continuously measured and compared to a reference; then influence the process to adjust to the reference - closed loop control (controlled variable influences itself in a closed action path). 
+>
+>*discrete process:* binary variables (goal of control: stay in desired state); output modelled as state transitions/state change; input influences output based on defined system laws but output does not continuously influence itself.
+>
+>**examples:** plane vs traffic lights or door open/closed/locekd mechanism
+
 Q10. **What is the difference between hysteresis and deadband?**
+
+>**terms:** hysterisis, deadband
+>
+>*hysterisis:*
+>
+>*deadband:*
+>
+>
+>
 
 Q11. **What is plant identification? How is it carried out? Explain a step response.**
 
@@ -95,4 +119,3 @@ Q21. **Program a simple example in FBD (e.g. a saw tooth generator, a sine wave 
 Q22. **Program a simple sequence in SFC (e.g. a recipe, a coffee dispenser)**
 
 Q23. **How is a program executed on a PLC and how does it ensure its real time behavior?**
-
