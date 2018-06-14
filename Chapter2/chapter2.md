@@ -76,14 +76,27 @@ Q10. **What is the difference between hysteresis and deadband?**
 
 >**terms:** hysterisis, deadband
 >
->*hysterisis:*
+>effects that cause diifferent than expected behaviour in control systems
 >
->*deadband:*
+>*hysterisis:* difference of valve position on up- and down-stroke
+>
+>*deadband:* no movement of valve due to slack space (usually when changing directions)
+>
+>Include the effects in switchpoint calculation (for two-point controller) when the process is not slow enough to avoid waring off the contacter (and limit switching frequency)
+>
+>**example** valve controlling water flow in pipe or air flow for temperature
+
+Q11. **What is plant identification? How is it carried out? Explain a step response.**
+
+>**terms** plant identification
+>
+>*plant identification:* finding an exact model describing the plant
+>
+>
 >
 >
 >
 
-Q11. **What is plant identification? How is it carried out? Explain a step response.**
 
 Q12. **How does a two point regulator operate? Is it a linear system? How is it analyzed?**
 
