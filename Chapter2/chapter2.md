@@ -42,7 +42,7 @@ Q7. **What is a controller and what is its purpose? What has to be taken into ac
 >
 >*Controller:* controls plant to reach the preferred output;
 >  - measures states fromsensors
->  - send commandsto actuators to stabilize output within useful time
+>  - send commands to actuators to stabilize output within useful time
 >
 >*Designing:* Plant to be controlled has to be known (how variables influence each other and the output)
 > - get a plant model through plant identification and specify all parameters (testing)
@@ -74,33 +74,47 @@ Q9. **What are the differences between modelling for continuous and discrete pro
 
 Q10. **What is the difference between hysteresis and deadband?**
 
->**terms:** hysterisis, deadband
+>**terms:** hysteresis, deadband
 >
 >effects that cause diifferent than expected behaviour in control systems
 >
->*hysterisis:* difference of valve position on up- and down-stroke
+>*hysteresis:* difference of valve position on up- and down-stroke
 >
 >*deadband:* no movement of valve due to slack space (usually when changing directions)
 >
 >Include the effects in switchpoint calculation (for two-point controller) when the process is not slow enough to avoid waring off the contacter (and limit switching frequency)
 >
->**example** valve controlling water flow in pipe or air flow for temperature
+>**examples:** valve controlling water flow in pipe or air flow for temperature
 
 Q11. **What is plant identification? How is it carried out? Explain a step response.**
 
 >**terms** plant identification
 >
 >*plant identification:* finding an exact model describing the plant
+>if countinuous plant find find the relation between input and output variables and formulate it as a function, if discrete define stage transitions based on input
+>realtions usually approximately knwon -> determine exact parameters by measuring (signal correlation between response to pulse at input and response to noise at input yields parameters)
 >
->
->
->
->
-
+>**examples:** electric car, speed control: speed might be proportional to voltage, but parameter depends on fraction of tires and street. So drive the car and measure speed with different voltages and different streets (noise)
 
 Q12. **How does a two point regulator operate? Is it a linear system? How is it analyzed?**
 
+>**terms**: two-point regulator
+>
+>binary control output (on/off) based on upper and lower switch-point (keep value between to set-points). Take hysteresis and deadband into account for lower switching frequency.
+>
+>**examples:** regulate temperature in a room with heating instrument. Cooling happens slower than heating -> not linear. Turn heating on when colder that 17 degrees and off if warmer than 20 degrees.
+
 Q13. **How does a PID regulator work? What is the influence of each coefficient?**
+
+>**terms:** PID regulator
+>
+>The PID regulator is widely used and is based on a control loop. That means the controller calculates the error between the measured output (obtained from the feedback loop) and the set-point. Then it minimizes this error by adjusting the control output. 
+>The realtion between the error and the control output is described as a differential equation, based on the plant model. PID is a combination of three control parts:
+>*P - conttrol:* proportional factor; amplifies the error. A little error still stays even after convergence. This error increases with a bigger set-point or load change. The bigger the factor the smaller the final errro but the bigger the oscillation. *proportional output to error but small error still exists*
+>*PI - control:* proportional integrator; reduces the error asymptotically to zero, but very slow; Gets faster with bigger factor but also more unstable *reduces error completely but slow*
+>*PD - control:* proportional differentiation; reacts proportional to slope of error change  *speeds up a stable response*
+>
+>**examples:** adjustion to step response
 
 Q14. **Explain the Ziegler-Nichols method to adjust a PID controller.**
 
