@@ -116,7 +116,16 @@ Q13. **How does a PID regulator work? What is the influence of each coefficient?
 >
 >**examples:** adjustion to step response
 
-Q14. **Explain the Ziegler-Nichols method to adjust a PID controller.**
+Q14. **Explain the Ziegler-Nichols method to adjust a PID controller.**  
+
+>**terms:** PID controller
+>
+>Goal: adjust PID controller, meaning right values for {K_p}, {T_i}, {T_D}. Configuring these parameters is done by setting them empirically. Times and values to consider/ minimize are Risetime, Overshoot/undershoot (Biggest oscillation over and under set v), Settling time (Time until output has stabilized enough to be close enough to required output), Steady state error (error still left after output has stabilized).
+>
+>
+>
+>
+>
 
 Q15. **What are nested controllers and what is the influence of nesting on their time response?**
 
