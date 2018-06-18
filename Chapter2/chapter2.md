@@ -120,12 +120,12 @@ Q14. **Explain the Ziegler-Nichols method to adjust a PID controller.**
 
 >**terms:** PID controller
 >
->Goal: adjust PID controller, meaning right values for {K_p}, {T_i}, {T_D}. Configuring these parameters is done by setting them empirically. Times and values to consider/ minimize are Risetime, Overshoot/undershoot (Biggest oscillation over and under set v), Settling time (Time until output has stabilized enough to be close enough to required output), Steady state error (error still left after output has stabilized).
->
->
->
->
->
+>Goal: adjust PID controller, meaning right values for {K_p}, {T_i}, {T_D}. Configuring these parameters is done by setting them empirically. Times and values to consider/ minimize are Risetime (time until control response first reaches set point), Overshoot/undershoot (Biggest oscillation over and under set value), Settling time (Time until output has stabilized enough to be close enough to required output), Steady state error (error still left after output has stabilized).
+>Steps (Assuming that the process is stable at the operating value):  
+>*Step 1:* set {T_i}, {T_D} to off.
+>*Step 2:* actual value differs now from solicited value by proportional factor. 
+>*Step 3: wait for value to stabilize and reduce {K_p} until process var starts to oscillate (Oscillation value T)
+>*Step 4:
 
 Q15. **What are nested controllers and what is the influence of nesting on their time response?**
 
