@@ -124,8 +124,11 @@ Q14. **Explain the Ziegler-Nichols method to adjust a PID controller.**
 >Steps (Assuming that the process is stable at the operating value):  
 >*Step 1:* set {T_i}, {T_D} to off.
 >*Step 2:* actual value differs now from solicited value by proportional factor. 
->*Step 3: wait for value to stabilize and reduce {K_p} until process var starts to oscillate (Oscillation value T)
->*Step 4:
+>*Step 3:* wait for value to stabilize and reduce {K_p} until process var starts to oscillate (Oscillation value T)
+>*Step 4:* increase {K_p} until value stabilizes again (Band value B)
+>Set value according to B,T and valie on table on slide 55 (not preventing overshoot..)
+>
+>**examples:** EPFL bought PID controller for temperature in a room. Some PID controllers do configuration more or less automatically. Other wise an expert has to manually set it.
 
 Q15. **What are nested controllers and what is the influence of nesting on their time response?**
 
