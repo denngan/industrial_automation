@@ -132,13 +132,69 @@ Q14. **Explain the Ziegler-Nichols method to adjust a PID controller.**
 
 Q15. **What are nested controllers and what is the influence of nesting on their time response?**
 
-Q16. **What is feed-forward control used for?**
+>**terms:** nested controller, time response
+>
+>Nested conrollers are layers of control loops. One controllers output is then the set point of the inner controller. The inner controller's influenced process variable influences the process var that the outer controller wants to control.
+>The goal of nested controllers is to maintain an output variable without exceeding other variable limitations.
+>The time response measures how fast the controllers output influences the process variable and how fast the controller gets back the measured variable through the feedback loop. The time response in the inner loop is the fastest while the outer loop is the longest.
+>
+>**examples:** speed control for wheels. outer controller decides on accelaration to reach a speed, inner controller computes rotation speed for the wheels (might have some maximum rotation)
 
-Q17. **What characterizes a PLC, which kinds exist and what is their application field?**
+Q16. **What is feed-forward control used for?**  
 
-Q18. **What criteria need to be evaluated when selecting PLCs for an application?**
+>**terms:** feed forward control
+>
+>A feed forward controller is used when the plant is known and also the disturbances. First the controller gets the output close to the set-point. The controller output can be corrected based on the measured disturbances (feed forward).
+>Then the controller regulates based on the error(feedback) and corrects small deviations.
+>
+>**examles:** Plane, the wind could be a disturbance, if flying in direction of wind the plane needs to use less energy for the same speed, that can be computed before hand if wind is measured.
+
+Q17. **What characterizes a PLC, which kinds exist and what is their application field?**  
+
+>**terms:** PLC
+>
+>*PLC (Programmable logic controller)*: small computer, dedicated to automation tasks in industrial environments; today real-time(embedded) computer with extensive input/output
+>A PLC measures, controls, commands, protects and might log and have a small HMI. It is connected to a network and has both digital and analog inputs and outputs.
+>There are three kinds of PLCs: Compact(monolithic), modular (backplane extensible), Soft-PLC
+>
+>*Compact:* one piece, fixed case, fixed I/O number, no additional processing power, cheap, fieldbus extension possible, sometimes LAN connection; Application: simple control tasks of small sonsors or actuators, number of I/O is limited
+>
+>*Modular:* has modules, can be tailored/is extensible, high processing power, large I/O choice, requires marshalling of signals; Applications: Complex control task, very specialised, many I/O, a lot of data to process. Cost effective if rack can be filled, if I/Os could be extended.
+>
+>*Soft-PLC:* used as engineering workstation, real-time processing, HMI, Linux or Windows-based automation products,Direct use of CPU or co-processors; Application: fieldbus gateway to distributed I/O system, Or for sensors/ actuators who use linux, when HMI is needed, task rather simple and security not so important.
+>
+>**examples:** use a compact PLC for controlling a simple fan, modular for control of big factory or some complex machine, Soft PLC for simple not critical task
+
+Q18. **What criteria need to be evaluated when selecting PLCs for an application?**  
+
+>**terms:** PLC
+>Criteria for PLC evaluation and selection for specific task: 
+>* number of points (1024/640)
+>* memory (10/16KB)
+>* programming language (ladder diagram, instruction lists, basic, hand-terminal, logic symbols)
+>* programming tools (graphical on PC)
+>* download (no/yes)
+>* real estate per 250 I/O - how much space does it take (1000/2000 cm^2)
+>* label surface per line/per point (5,3/6mm^2)/(7/6 characters)
+>* Network (10/19.2 Mbits)
+>* Mounting (DIN rail/cabinet)
+>
+>**examples:** controller in a car or machine could not have much space, some apps need faster connection, different memory for computations
 
 Q19. **Describe the chain of signal processing from the sensor to the actors in a PLC.**
+
+>**terms:** chain of signal processing, PLC, signals, actuators
+>
+>describes the flow of signal coming from a sensor going to PLC and leaving as a command for an actuator. 
+>
+>*analog input:* filter and scan, sample, convert to digital
+>*binary input:* filtering, sample
+>controller procceses, while able to use memory
+>*analog output:* convert to analog, amplifying
+>*binary output:* transistor relay
+>
+>**example:** temperature processing 
+
 
 
 ## Chapter 2.3 - PLC Programming 
@@ -153,8 +209,32 @@ Q19. **Describe the chain of signal processing from the sensor to the actors in 
 
 Q20. **Which programming languages are specified in IEC 61131 and what are they used for?**
 
+>**terms:** IEC 61131
+>
+>IEC 61131 is a standard to program PLCs. It specifies data types (where operations are executed on), languages (for real time or cyclic), software structure and execution.
+>*Graphical languages:*
+>* Function Block Diagram: expresses programs in similar way as circuits, for continuous functions and combinatorial logic, blocks (black box behavior): Functions (no memory, library), EFB (Function blocks with memory, library), Programs (Compound blocks, defined by user)
+>* Sequential Flow Chart: describes sequences of operations/interactions between parallel processes. Has states, transitons, tokens, execution period. One flow chart as whole can be seen as a discrete function.
+>* Ladder Diagrams: based on relay intuition of electritians, very old and widely used, complex for large projects, has conditions (input parameters) and actions. no subprograms, no data encapsulation, no structured data types. 
+> 
+>*Textual Languages:* 
+>* Structured Text: imperative language, complex data manipulation, writing blocks, could break real-time
+>* Istruction List: machine language of PLCs (21 commands), accumulator based programming, conditionals supported, hard to write for big projects, no structure, machine dependant, weak semantics, but for specialists most efficient way, not suitable to make reusable models, used mostly in maufacturing, not process control
+>
+>**examples:** discrete process good to model with sequence diagram, analog maybe Function block diagram or if complex stuff structured text
+
 Q21. **Program a simple example in FBD (e.g. a saw tooth generator, a sine wave generator)**
 
 Q22. **Program a simple sequence in SFC (e.g. a recipe, a coffee dispenser)**
 
 Q23. **How is a program executed on a PLC and how does it ensure its real time behavior?**
+
+>**terms:** PLC, real time
+>
+>A PLC is programmed with programming languages defined in IEC 61131 
+>The program is translated to machine code or some intermediate language. This is then interpreted or compiled into assembly language and can then be fed to the machine. 
+>
+>The languages are developed for cyclic execution and thus can ensure real time. The computer, PLC is binary sequential and discrete, thus it has non overlapping value and abrupt trasitions. Still it can model continuous plants. The time constant of the control system /PLC must at least be one magnitude smaller the set time constant that should not be exceeded.
+>Whatch out: Structured Text could break real time with bad implementation or wrong loops
+>
+>**examples:** PLC computes every 1 ms thus making sure that after that there will always be a value
