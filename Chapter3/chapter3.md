@@ -231,7 +231,7 @@ Q41. **Compare HART and WirelessHART**
 
 Q42. **Compare HART and SNMP**
 
->**terms:** 
+>**terms:** HART, SNMP
 
 
 | citeria      | HART           | SNMP |
