@@ -193,7 +193,7 @@ Q39. **Discuss advantages and disadvantages of CAN.**
 >*pros:* supperted by user organizations (Honeywell etc.), many low cost chips often free with embedded controllers, application layer definition, application layer profiles, bus analysation and configuration tools available, market: industrial automation, cars
 >*cons:* limited product distance x rate, sluggish real time response (2,5ms), non-deterministic medium-access, several incompatible application layers (CanOpen, DeviceNet) strongly protected by Bosh patents, interoperability questionable (many different implementations), small data size, limited number if registers in chips, no standard message services
 >
->**examples:** ..
+>**examples:** .. when is it usable?
 
 Q40. **Why are wireless solutions both useful and problematic for industrial automation?**
 
@@ -207,18 +207,38 @@ Q40. **Why are wireless solutions both useful and problematic for industrial aut
 
 Q41. **Compare HART and WirelessHART**
 
->**terms:** 
+>**terms:** HART, Wireless
 >
+>The protocols differ in the network, data link and physical layer. On top of those layers they use the same protocol.
 >
+>*Network layer:* routing
+>HART: No need for special protocols
+>WirelessHART: Power-Optimized, redunant Path, Self-Healing Wireless Mesh Net
 >
+>*Data Link:* Data packet structure, framing, error detection
+>HART: Binary, Byte oriented, Token Passing Master Slave Protocol
+>WirelessHART: Secure and reliable, time synchronized, TDMA/CSMA, Frequency agile with ARQ (Collision and inference avoidence, channel hopping and black lists)
+>
+>*Physical:* 
+>HART: Simultaneous analog and digital signaling, 4-20 mA copper wiring
+>WirelessHART: 2,4 GHz radios, 10 dBm Transmission power 250 kbit/s data rate
 >
 >**examples:** 
 
 Q42. **Compare HART and SNMP**
 
 >**terms:** 
->
->
->
->
+
+
+| citeria      | HART           | SNMP |
+| ------------- |:-------------:| :-----:|
+| Resources    | less | more |
+| Application     | sensors/actors to PLS      |   network management |
+| monitoring | yes      |   yes |
+| events   | no | (yeah but often not used) |
+| communication pattern     | request, response     |   request, response (+traps) |
+| real time | ..   |    .. |
+| security |..|..|
+
+
 >**examples:** 
