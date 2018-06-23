@@ -59,23 +59,103 @@ Q46. **Which services does OPC DA offer and how are variables organized on the c
 
 >**terms:** OPC DA (data access)
 >
+>OPC DA provides data access to process variables.
+>Process variables sent upon a change, on demand or when given time elapsed. The OPC DA (Data Access) specification addresses collecting Process Variables. Main clients of OPC DA are visualization and (soft-) control.  
+>Services offered: read, write of process variables  
+>*read:* synchronous, asynchronous, subscribe (notified on change)  
+>*write:* synchronous, asynchronous  
 >
+>The communication is done by groups.   
+>The structure is defined during engineering of the attached devices and sensor/actors.  
+>*client view:* needs only a subset of PLC items; builds flat groups of items with similar time requirements. The client builds flat groups of items with similar time requirements.   
+>*server view:* The client registers groups at server and the server keeps a structure of all its clients. Operations are then done per group.  
 >
+>OPC DA uses shared memory for communication and thus has no guarantees.  
 >
+>**examples:**
 
 Q47. **Which modes of reading and writing are available to an OPC client?**
 
+>**terms:** OPC DA (data access)
+>
+>OPC DA provides data access to process variables.
+>Process variables sent upon a change, on demand or when given time elapsed. The OPC DA (Data Access) specification addresses collecting Process Variables. Main clients of OPC DA are visualization and (soft-) control.  
+>Services offered: read, write of process variables  
+>*read:* synchronous, asynchronous, subscribe (notified on change)  
+>*write:* synchronous, asynchronous  
+>
+>The communication is done by groups. The client registers groups at server and the server keeps a structure of all its clients. The client builds flat groups of items with similar time requirements.  
+>OPC DA uses shared memory for communication and thus has no guarantees.  
+>
+>**examples:**
+
 Q48. **What are the services offered by OPC AE and how are the variables offered to the client?**
+
+>**terms:** OPC AE (Alarms and Events)
+>
+>The servers registers alarms and events and  makes them available to clients. Those messages should not get lost, thus message passing is used (events in a queue, that all clients have to read). That guarantees the same sequence view and no lost data. The event list can be long, so the entries are not cleared when the state is normal again. The alarm list should be short though, so the alarms are cleared when they are gone.  
+>
+>*services:*  
+> * browse for predefined events
+> * enable/disable alarms, events
+> * subscribe to alarms and events of interest
+> * receive events, alarm notifications with associated attributes
+> * acknowledge alarms
+>
+>**examples:** ..
 
 Q49. **Which is the difference between an alarm and an event and how are these two types of information generated and treated by the SCADA (Operator workplace)?**
 
+>**terms:** alaram vs event
+>
+>*events:* 
+>
+>*alarms:*
+>
+>
+>**examples:** 
+
 Q50. **Explain the mechanism to acknowledge an alarm in a PLC with OPC AE**
+
+>**terms:** alaram vs event
+>
+>*events:* 
+>
+>*alarms:*
+>
+>
+>**examples:** 
 
 Q51. **Explain the difference between the communication paradigms of OPC DA and OPC AE**
 
+>**terms:** alaram vs event
+>
+>*events:* 
+>
+>*alarms:*
+>
+>
+>**examples:** 
+
 Q52. **What is OPC HDA used for and what are the services it offers?**
+
+>**terms:** alaram vs event
+>
+>*events:* 
+>
+>*alarms:*
+>
+>
+>**examples:** 
 
 Q53. **What is a Manufacturing Execution System and how is tied to the performance of a plant?**
 
-
+>**terms:** alaram vs event
+>
+>*events:* 
+>
+>*alarms:*
+>
+>
+>**examples:** 
 
