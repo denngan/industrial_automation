@@ -11,6 +11,21 @@
 
 Q42. **Compare HART and SNMP**
 
+>**terms:** HART, SNMP
+
+
+| citeria      | HART           | SNMP |
+| ------------- |:-------------:| :-----:|
+| Resources    | less | more |
+| Application     | sensors/actors to PLS      |   network management |
+| monitoring | yes      |   yes |
+| events   | no | (yeah but often not used) |
+| communication pattern     | request, response     |   request, response (+traps) |
+| real time | ..   |    .. |
+| security |..|..|
+
+>**examples:** 
+
 Q43. **What is the MMS standard used for and which are its principal services in relation with the engineering, programming and operation of a PLC?**
 
 >**terms:** MMS (Manufacturing Messaging System)
