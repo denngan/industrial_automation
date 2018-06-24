@@ -126,45 +126,63 @@ Q49. **Which is the difference between an alarm and an event and how are these t
 
 Q50. **Explain the mechanism to acknowledge an alarm in a PLC with OPC AE**
 
->**terms:** alaram vs event
+>**terms:** alaram
 >
->*events:* 
+>*alarm:* indication of abnormal state form PLC  
+>An alarm needs to be acknowledged in OPC AE. There are two possibilities to do so.
+> * operator acknowledges condition (client ack)
+> * button at PLC is pressed (field ack)
 >
->*alarms:*
+>For logging each acknowledge carries an ack ID. Also each acknowledge creates an event and when an alarm turns inactive or is cleared another event is sent.
 >
->
->**examples:** 
+>**examples:** Field Ack: A mechanic changed something in the controlled machine itself and acknowledges the alarm directly at the PLC (maybe some leak in the tank cause a tank empty alarm but the leak was fixed); Client Ack: Some other part of the system was causing the alarm indirectly, but was fixed, so the operator acknowledges the alarm at the SCADA level (Water flow was set to a too high value causing a tank spilling alarm)
 
 Q51. **Explain the difference between the communication paradigms of OPC DA and OPC AE**
 
->**terms:** alaram vs event
+>**terms:** message passing vs shared memory, and data access vs alarms amnd events
 >
->*events:* 
+>*Data Access uses shared memory:* offering read, write services  
+>returning last value stored, newer ones overwrite old ones  
+>no guarantuees: different views and missed changes possible  
+>As Data Access is interested in the value right now, not the history or the change it is appropriate  
 >
->*alarms:*
+>*Alamrs and Events uses message passing:* offering notifications on change    
+>queues of events until read, all clients see the same sequence, nor alarms should be lost   
+>guarantuees: no missed changes, same views  
+>As alarms and events should not be lost and the change is the priority, message passing is appropriate here
 >
->
->**examples:** 
+>**examples:** Message passing with alarms dangerous, because new one overwrites old one and client cannot keep track, and alarms are lost. If some data should just be accessed though it is an overkill to go through the whole queue that can be very big. This is a danger to real time guarantuees.
 
 Q52. **What is OPC HDA used for and what are the services it offers?**
 
->**terms:** alaram vs event
+>**terms:** OPC HDA (Historian Data Access)
 >
->*events:* 
+>*Historian Data Access:* offers access to the historian (raw and ordered) data. The server has access to a historian database and offers the client ordered access to that data with services as follows:
+> * browse database
+> * retreive data trough filtering
+> * aggregates
+> * new entries, correct, delete
+> * annotations
 >
->*alarms:*
->
->
->**examples:** 
+>**examples:** Trend analysis of the system or some parts, business optimization through data analyzation, Event Logger
 
 Q53. **What is a Manufacturing Execution System and how is tied to the performance of a plant?**
 
->**terms:** alaram vs event
+>**terms:** MES (Manufacturing Execution System)
 >
->*events:* 
+>*Manufacturing Execution System:* A system for manufacturing, one layer over SCADA for order tracking, resource planning and workflow planning. Handling and using the MES requires a good knowledge of the manufacturing process and organization skills. Areas the MES is used in/for:  
 >
->*alarms:*
+> * Resource allocation
+> * Quality management
+> * Performance analysis
+> * Labour management
+> * Process management 
+> * Document Control 
+> * Maintenance management
+> * Product tracking etc..
 >
+>The MES connects the control and the plant itself with the engineering, the suppply chain and other departments of the business.  
+>ISA S95 standard defines good practices and gives definitions in that area (interface between enterprise and control system)
 >
->**examples:** 
+>**examples:** ..
 
