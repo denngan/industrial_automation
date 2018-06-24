@@ -10,6 +10,13 @@
 ### Exam Questions
 
 Q67. **Explain the difference between hard- and soft real time from a probabilistic point of view.**
+
+>**terms:** hard and soft real time
+>
+>*real time:* produce output that respects predifined time constraints  
+>
+
+
 Q68. **Why should a control system behave deterministically and how can this goal be reached?**
 
 Q69. **Which components of a computer behave non-deterministically?**
