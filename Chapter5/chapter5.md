@@ -30,12 +30,52 @@ Q55. **What is a process database and what is the difference with an historical 
 
 >**terms:** process data base, historian database
 >
->*process data basae*s current state of plant, older values are irrelevant and overwritten
+>*process data base:* represents the current state of plant, older values are irrelevant and overwritten.   
+>actaulized by: *polling* - synoptic view fetches data regularly from database or devices; *events* - devices send data that changed in database triggering the views
 >
+>*history database:* stores process data from history over time (data compression), offers trends and a historian (offering performance indicators, quality monitoring, data mining, analysis of situations)  
+>
+>So while the process database represents the current state of the pplant very precisely the history database stores many plant states from history with less precision.
+>
+>**examples:** ..
 
-Q56. **What are the typical pitfalls to avoid when designing synoptic views?**
+Q56. **What are the typical pitfalls to avoid when designing synoptic views?**  
 
-Q57. **Which is the difference between an alarm and an event?**
+>**terms:** synoptic views
+>
+>*synoptic views:* views of a process variables displayed visually on the HMI. The HMI is important for good supervision and alarm handling
+>
+>common mistakes:  
+> * lots of numbers without structure on screen
+> * inconsistent use of colors
+> * too many colors
+> * no trend shown
+> * no condition information
+> * no global overview
+> * inefficient space use
+>
+>data is not information: always add the possibility to assess, compare, rate the results (indication and trend)
+>
+>tips:
+> * get rid of necessary details
+> * do not get too fancy
+> * bright colors - alarms
+> * no unnecessary animation
+> * no capital letters
+> * grids for order
+> * columns, sections (12 column design)
+> * use similar icons
+> * use same data format and terminology
+>
+>**examples:** ..
+
+Q57. **Which is the difference between an alarm and an event?**  
+
+>**terms:** alarm, event
+>
+>*alarm:* audible/visual indication of an abnormal condition. Requires some response or action otherwise, leading to dangerous situations.  
+>Compute alarm level: critical level - safety margin - operation reaction time * max rate   
+>
 
 Q58. **What is an Historian for SCADA and what is its purpose?**
 
