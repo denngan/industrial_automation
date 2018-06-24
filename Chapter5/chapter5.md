@@ -74,8 +74,19 @@ Q57. **Which is the difference between an alarm and an event?**
 >**terms:** alarm, event
 >
 >*alarm:* audible/visual indication of an abnormal condition. Requires some response or action otherwise, leading to dangerous situations.  
->Compute alarm level: critical level - safety margin - operation reaction time * max rate   
+>Compute alarm level: critical level - safety margin - operation reaction time * max rate    
+>frequencies: 1 alarm/10 min per operator (nominal), 1 alarm/5 min (maximal), more than 10 alarms/10 minutes (avalanche situation); recommended average number of active alarms: less than 10  
+>alarm consist of: title, priority, description, timestamp, remedial action. (on levels, deviation, change rate)
 >
+>*event:* informative indication of normal/abnormal process/function which if ignored does not put the process in danger (no immediate action required)  
+>event consists of: title, description, timestamp
+>
+>**examples:** event - periodic maintenance required; alarm - tank spilling
 
 Q58. **What is an Historian for SCADA and what is its purpose?**
+
+>**terms:** historian
+>
+>*historian:* keeps old relevant process data in low granularity but large quantity  
+>The historian stores aggregated data form different sources in one database using data compression. It allows to analyse data to retreive metrics (perormance indications, quality monitoring, situation analysis)
 
