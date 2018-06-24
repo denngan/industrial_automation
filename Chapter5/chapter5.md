@@ -88,5 +88,8 @@ Q58. **What is an Historian for SCADA and what is its purpose?**
 >**terms:** historian
 >
 >*historian:* keeps old relevant process data in low granularity but large quantity  
->The historian stores aggregated data form different sources in one database using data compression. It allows to analyse data to retreive metrics (perormance indications, quality monitoring, situation analysis)
-
+>The historian stores aggregated data form different sources in one database using data compression. It allows to analyse data according to calculation engines to retreive metrics (perormance indications, quality monitoring, situation analysis)  
+>It also allows to build audit trails in accordance to regulations.  
+> On top it offers different analysis possibilities as time series plot, statistical plot, histogram, regression, frequency domain analysis and the possibility to compute some performance indices as SAIFI (System Average Interruption Frequency Index) and SAIDI (System Average Interruption Duration Index).
+>
+>**examples:**  ...
