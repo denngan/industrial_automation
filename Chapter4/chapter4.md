@@ -108,12 +108,21 @@ Q49. **Which is the difference between an alarm and an event and how are these t
 
 >**terms:** alaram vs event
 >
->*events:* 
+>*event:* informative indication of a (normal) process, that is not dangerous if it was ignored; not dangerous change of state   
+> * simple: related to process control sytem (change of variable)
+> * condition-related: notification about a change of an alarm condition (cleared, acknowledged)
+> * tracking-related: origin outside process (operator related)
 >
->*alarms:*
+>identified by source, event name + message, time stamp (at different stages: device, controller, OPC server)
 >
+>*alarm:* indication of an abnormal condition requiring action; critical change of a variable, requiring action or acknowledgement, can be seen as a named state machine.  
+>An alarm (in OPC) can have different states: enabled, active (alarm), acknowledged (field acknowledgement - at PLC, client acknowledged - by operator). The alarm condition is active when PLC produces alarm signal for abnormal state. An alarm should never get lost  
+>identified by source, alarm name + message, time stamp (at different stages), condition, subcondition, severity, type
 >
->**examples:** 
+>Alarms and messages are communicated by message passing. Creating queues and guaranteeing that different clients will see all events in the same sequence. That creates an alarm queue (rather short; the appearance changes when an alarm is acknowledged an the entry is cleared when the alarm signal is cleared) and an event queue (can become long as entries only cleared when read or timed out)  
+>The SCADA should show a time stamp, priority, title, description, and the remedial action of an alarm or event. The frequency for an alarm should not be too high (1 alarm/10 min). Events/alarms can be created on level, on deviaton or on rate change. While in SCADA an event is just shown and read/seen, an alarm requires action and has to be acknowledged.
+>
+>**examples:** event: production start, operator pressed button;  alarm: low tank level (needs to be handled).
 
 Q50. **Explain the mechanism to acknowledge an alarm in a PLC with OPC AE**
 
