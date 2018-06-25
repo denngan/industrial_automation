@@ -337,11 +337,26 @@ Q98. **Explain the main principles of FMEA and FTA.**
 
 >**terms:** FMEA, FTA
 >
->*FMEA (Failure Mode and Effects Analysis):* 
+>Both used for qualitative evaluation of a control system
 >
->*FTA (Fault Tree Analysis):* 
+>*FMEA (Failure Mode and Effects Analysis):*  identify component failures which have significant consequences affecting the system operation in the considered application; identify faults that lead to system failures (inductive, bottom-up approach). Reasons to use:
+> * get to know the system better (evaluate effects and sequences of events)
+> * identify weak spots (determine criticaliyt of each component for system)
+> * take necessary precautions (classification of failure modes into detectability, replacability, testability)
+> * demonstrate level of availability/safety (estimation of significance and impact of failure modes)  
+>Analysis usually done in a table
 >
-
+>Drawbacks: results only as good as the team (experience, knowledge), time consuming, might miss a failure mode (or component), regular update is necessary to include new potential failure modes, most efficient in early design stages
+> 
+>*FTA (Fault Tree Analysis):*  identifies combinations of conditions and component failures which lead to a single system failure (deductive, top-down)  
+>Begin with possible failures or a problem statement and find possible faults causing this. Reasons to use:
+> * root cause analysis: identify relevant events and conditions leading to an undesired event; determine parallel and sequential combinations, model complex event relationships
+> * risk assesment: calculate probability (risk) of undesired event, identify sasfety critical components, measure effect of design changes
+> * design safety assessment:  demonstrate compliance with requirements, show where safety requirements are needed, identify and evaluate potential design defects/weak links, determine common modes of failure
+>Only do FTA on safety critical hazards
+>Analysis done in fault tree, nodes are failures, edges are logical connections.
+>
+>**examples:** FTA:  Calculate the probability of a nuclear power plant accident, evaluate the recent accidents of autonomous cars; FMEA: analyse tea despenser and the effect of each component failure
 
 Q99. **What is the difference between FMEA and FMECA?**
 
