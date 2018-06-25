@@ -11,19 +11,90 @@
 
 Q59. **What is the difference between precision and accuracy for sensors?**
 
+>**terms:** sensor
+>
+>*sensor:* measures some process variable, returning a value either digital or continuous
+>
+>*Precision (repeatability):* how reproducable, close are identical measurements - percentage of full scale
+>*Accuracy (deviation):* how close is the measurement to the true value - if bad then systematic error or bad calibration
+>
+>*resolution:* smallest change/unit that can be measured/displayed. (How many differnet levels can be distinguished)
+>
+>**examples:**  ...
+
 Q60. **What is the precision of a sensor? How is it linked to the accuracy of a sensor?**
+
+>what exactly is the difference to question 59?
 
 Q61. **Explain the principle of a LVDT sensor (Linear Variable Differential Transformer).**
 
+>**terms:** LVDT sensor (Linear variable differential transformer)
+>
+>The LVDT sensor measures linear displacement.  
+>coil - establishinga magnetic flux + one secondary coil on each side in series but opposite directions  
+>moving armature in the middle  
+>If the armature is in the center, the magnetic flux is equal in both secondaries (180 degrees out of phase)  
+>When the armature moves voltage is produced proportional to the displacement
+>
+>**examples:** ..
+
 Q62. **Explain the principle of a capacitive angular sensor.**
+
+>**terms:** capacitive angle
+>
+>*capacitive angle:* measures agle/position  
+>Using the capacitance between two areas. The capacitance depends on the area that overlaps. If the angle changes, the capacitance changes proportional to the area and angle.
+>
+>**example:** .. 
 
 Q63. **Explain the principles of strain gauges.**
 
+>**terms:** strain gauge
+>
+>*strain gauge:* measure small displacements  
+>resistance of wire (with resistivity p) increases when the wire is streched.  
+>Measure the resistance change ang get the displacement through the formula R=l^2  (use the wheatstone bridge to measure the resistance change, is uses dummy gauges for temperature compensation)
+>
+>**examples:** detect movements in buildings, bridges, dams
+
 Q64. **What are the main families of temperature sensors?**
+
+>**terms:** temperature sensor
+>
+>*Temperature sensor:* measure temperature, very frequently used in industry
+>
+> * Thermistance: (RTD resistance temperature detector) metal's resistance depends on its temperature - cheap, robust, high temperature range; requires current source, non-linear
+>
+> * Thermistor: (NTC negative temperature coefficient) semiconductor's resistance depends on the temperature - very cheap, sensible; strongly non-linear, fragile, self-heating 
+>
+> * Thermo-element: pair of dissimilar metals generates a voltage proportional to the temperature difference between the cold and warm junction (Seebeck effect) - high precision, high temperature, punctual measurement; low voltage, requires cold junction compensation, high amplification, linearization
+>
+> * Spectrometer: measures infrared radiation by photo sensitive semiconductors - highest temperature, measures surface, no contact; highest price
+>
+> * Bimetal: mechanical (yes/no or on/off temperature indication), difference in dilation coefficients of two metals - very cheap, widely used; limited representation power
+>
+>**examples:** bimetal - toaster, when too hot - spectrometer, when very precise - thermo-element or thermistor
 
 Q65. **Explain the principle of a cold box junction.**
 
+>**terms:** cold box junction, thermo-element
+>
+>*thermo-element:*  two dissimilar conductors (metals) generate a voltage proportional to the temperature difference between the cold and warm junction (Seebeck effect). The hot junction measures the actual temperature while the cold junction has the reference temperature.
+>
+>**examples:** .. 
+
 Q66. **What is a P&ID?**
+
+>**terms:** P&ID
+>
+>*P & ID:* (piping and instrumentation diagram) shows flows in a plant and corresponding sensors and actors; It assigns a name/tag and parameters to each instrument, the tag identifies the instrument in the field  
+>The P&ID uses symbols and circles for each instrument and shows the overall connections, naming parts and identifying functions  
+>Hydraulic/pneumatic, electrical elements and instruments are mixed.  
+>For clarity a set of symbols from the standard ISA S5.1 is used.  
+>All in all a P&ID provides a standardized way to draw a plant's architecture.
+>
+>**examples:** ...
+
 
 ## Chapter 2.2 - Control And Field Level Devices
 
