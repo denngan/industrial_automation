@@ -231,7 +231,30 @@ Q90. **Set up the calculation for the availability of a system given its Markov 
 
 Q91. **Explain/describe the following dependable computer architectures: integer, persistent, integer & persistent.**
 
+>**terms:** integer, persistent
+>
+>*persistency:* computer always produces output (maybe wrong) "fail-operate", with two processes use failover logic
+>*integrity:* computer never produces wrong output (better none if unsure) "fail-safe", with a checker switch off (safe state) if wrong check (2oo2)  
+>*integer + persistent:* voter (2oo3)
+>
+>**examples:**  ...
+
 Q92. **Present a classification of the different error detection methods.**
+
+>**terms:** error detection
+>
+>check the result at what time:
+>*on-line:* while specified function is performed, by continuous monitoring  
+>*off-line:* in time period when the unit is not often used for a specified function, by periodic testing
+>
+>check correctness of the result by:
+>*absolute tests (acceptable tests):* test against an a priori consistency condition (plausibility check, optimistic); can find design errors 
+>*relative test (comparison):* compare results of redundant units
+>
+>**examples:** 
+|   | relative | absolute |
+| on-line | duplication and comparison, triplication and voting | watch dog, control flow checking, CRC, illegal address checking |
+| off-line| comparison with precomputed test result (fixed output) e.g. memory test | check program, check watchdog function, check program code |
 
 Q93. **Illustrate the principles of workby and standby redundancy approaches in the case of a network protocol.**
 
