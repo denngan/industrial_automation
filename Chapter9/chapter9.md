@@ -301,7 +301,26 @@ Q95. **What are the main issues of standby redundant architectures? How are they
 
 Q96. **What are byzantine faults?**
 
+>**terms:** byzantine fault
+>
+>*byzantine fault:* Any fault presenting different symptoms to different observers.   
+>A byzantine fault in systems that require consensus can lead to a byzantine failure.
+>
+>**examples:** computers agreeing on read values from sensors, byzantine general's problem
+
 Q97. **Explain different examples of voters in the context of input matching.**
+
+>**terms:** voters, input matching
+>
+>*input matching:*  same input at same time; binary or analog, matching is application dependant; input matching needed for worby redundancy  
+>Different workers have to find consensus on their input value and that can be done by voting. There are different types:
+> * Plurality voting: Select the value that occurs the most or a number of times defined by the developper.
+> * Median voting: Select the median value of the set of inputs. It is another way of dealing with approximation
+> * Threshold voting: Output is one if at least k out of n inputs is 1
+> * Majority voting is a special case of threshold voting
+> * Weighted threshold voting
+>
+>**examples:** vote(0,1,3,2,3,5,4)=3 - plurality; vote (1.00, 3.00, 0.99, 3.00, 1.01) = 1.01 median; last ones for binary values
 
 
 ## Chapter 9.6 - Safety Evaluation
@@ -315,6 +334,14 @@ Q97. **Explain different examples of voters in the context of input matching.**
 ### Exam Questions
 
 Q98. **Explain the main principles of FMEA and FTA.**
+
+>**terms:** FMEA, FTA
+>
+>*FMEA (Failure Mode and Effects Analysis):* 
+>
+>*FTA (Fault Tree Analysis):* 
+>
+
 
 Q99. **What is the difference between FMEA and FMECA?**
 
