@@ -15,7 +15,33 @@
 
 Q72. **What is the difference between a fault, a failure and en error?**
 
+>**terms:** fault, failure, error, mission
+>
+>*mission:* required function of a device in a given time
+>
+>*fault:* **abnormal condition** that may cause reduction/loss of the required functionality (state) - internal, connected to a component
+>
+>*error:* **deviation** from a required operation; logical manifestation of a fault in an application leading to a difference between the computed and the true value - internal, connected to a subsystem
+>
+>*failure:* termination/loss of the ability of item to perform the required function (event) - external, connected to the system
+>
+>A fault casues an error causes a failure. 
+>
+>There are different classification for faults and for errors.
+>
+>**examples:** software bug somewhere in code (line where division by zero happens), software bug becommes apparent when program runs through that if clause and returns an exception instead of a number, computer shuts down.   
+>transistor - memory bit stuck/software bug, memory chip - software bug becomes apparent/reading stuck memory, thus wrong result, computer shuts down 
+
 Q73. **What is the difference between reliability, availability and safety?**
+
+>**terms:** reliability, availability, safety
+>
+>*availability:* ability to be in a state to perform a required function under given conditions at a given instance of time, assuming all external sources are provided. Probability that an item will perform the required function at a given time. A = MTTF / (MTTF+MTTR)
+>
+>*reliability:* ability (probability) of item to perform a required function under given conditions for a given time interval. R(t) is a function of time. A is the integral of R(t).
+>
+>*safety:* not that close to dependability. freedom/independence from or elimination of an acceptable risk. Probability that system does not behave in a dangerous way (dangerous states not entererd). If safe states exist - sensitive system, if safe states do not exist - critical system.  
+> 
 
 Q74. **What is the difference between safety and availability and why do they conflict?**
 
