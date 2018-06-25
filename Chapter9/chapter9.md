@@ -249,18 +249,55 @@ Q92. **Present a classification of the different error detection methods.**
 >
 >check correctness of the result by:
 >*absolute tests (acceptable tests):* test against an a priori consistency condition (plausibility check, optimistic); can find design errors 
->*relative test (comparison):* compare results of redundant units
+>*relative test (comparison):* compare results of redundant units  
+>
+>additional infos on slides page 9
 >
 >**examples:** 
-|   | relative | absolute |
-| on-line | duplication and comparison, triplication and voting | watch dog, control flow checking, CRC, illegal address checking |
-| off-line| comparison with precomputed test result (fixed output) e.g. memory test | check program, check watchdog function, check program code |
+
+|     | relative       | absolute  |
+| ------------- |:-------------:| :-----:|
+| on-line   | duplication and comparison, triplication and voting |  watch dog, control flow checking, CRC, illegal address checking |
+| off-line    | comparison with precomputed test result (fixed output) e.g. memory test     |  check program, check watchdog function, check program code |
 
 Q93. **Illustrate the principles of workby and standby redundancy approaches in the case of a network protocol.**
 
+>**terms:** workby vs standby
+>
+>*workby redundancy:* (static/parallel; worker, co-worker) both machines working in parallel and modify their states. either one fail-silent unit or voting)  
+>*standby redundancy:* (dynamic/serial redundancy, one online and one offline unit) copying state as backup from time to time, only activated when an error is detected
+>
+>**examples** network
+> * dynamic/standby: switches can route traffic over other route or port if one link is broken
+> * static/workby: two redundant networks in place node sends each message on both networks, at least one message should reach
+
 Q94. **What are the main issues of workby redundant architectures? How are they solved?**
 
+>**terms:** workby redundancy
+>
+>*workby redundancy:* both units work and update their states
+> * Both units have to be synchronized: input synchronization and matching (same input at same time; binary or analog, matching is application dependant) + output synchronization and selection (delay between outputs should be small enough for comparison)  
+> * A consensus value has to be built: each replica get value from different sources, build vector of received value and apply matching algorithm, compare to other vectors then
+>
+>**examples:** 
+
 Q95. **What are the main issues of standby redundant architectures? How are they solved?**
+
+>**terms:** standby redundancy
+>
+>*hot standby:* working but no output and no computtation, easy switchover when failure
+>*warm standby:* standby unit not operational, long switchover, loss of state info, but standby/storage unit has smaller failure rate
+>
+>Standby relies on the existence of a stable storage in which the state of the computation is guarded. Switchover only possible with a saved state. Thus checkpointing is needed for state transfer.  
+>*Checkpoints* save enough information to reconstruct previous known good state. In order to do so additional hardware like a bus spy is needed. Efficient checkpointing requires that the application tags the data to save and decides on the checkpoint location. Because the amount of relevant information depends on the checkpoint location.  
+>*Logging* monitor input/output interactions of the online unit in an interaction log. After reconstructing a know-good state from the full copy and incremental back-ups, the stand-by resumes computation and applies the log of interactions to it.  
+>take input data from log instead of reading directly
+>surpress outputs if already in log
+>resumes normal computations if log is void
+>
+>*Domino effect* Acting on wrong data can cause a roll-back on all units. Place the checkpoints in function of communication (before each communication) to prevent this
+>
+>**examples:** .. 
 
 Q96. **What are byzantine faults?**
 
