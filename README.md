@@ -1,6 +1,6 @@
 ## EPFL - Industrial Automation
 
-This site is supposed to support the exam preparation for the EPFL course **Industrial Automation**. 
+This site is supposed to support the exam preparation for the EPFL course **Industrial Automation**. All information and content was added and created based on my knowledge of the course, so be aware that there is no guarantee for the correctness or completeness of the data. Some questions are still being worked on.  
 For more information and chapter slides visit the course's [moodle page](https://moodle.epfl.ch/course/view.php?id=14114).
 
 
