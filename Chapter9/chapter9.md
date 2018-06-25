@@ -160,21 +160,62 @@ Q81. **Explain the notion of failure rate and its relation to the MTTF.**
 
 Q82. **Calculate the reliability of a system that depends on a set of N elements.**
 
+>**terms:** reliability calculation
+>
+>compute the product of all single reliabilities
+>TODO...add formulas
+>
+>**examples:**..
+
 Q83. **Calculate the reliability of a system that depends on K out of N elements.**
+
+>**terms:** reliability calculation
+>
+>TODO add formula
 
 Q84. **How does the reliability of a 2oo3 (TMR, voter) compare with a simplex (1oo1) system?**
 
+>**terms:** reliability, KooN
+>
+>TODO formulas to get reliability for both. 2oo3 is only at the beginning a little bit better than 1oo1 after that much worse. That is becasue with three devices the probability that at least one fails is also higher. Better use 1oo2 for redundancy or just 1oo1
+>
+>**examples:**
+
 Q85. **Calculate the reliability of a system that has a 2oo3 redundancy with repair.**
+
+>**terms:** reliability calculation
+>
+>TODO add formula
 
 Q86. **Calculate the reliability of a 1oo2 redundant system (different failure rates).**
 
+>**terms:** reliability calculation
+>
+>TODO add formula
+
 Q87. **Calculate the availability of a 1oo2 redundant system (different failure rates and different repair rates).**
+
+>**terms:** availability calculation
+>
+>TODO add formula
 
 Q88. **Set up the equations for calculating the MTTF of a redundant system with repair.**
 
+>**terms:** MTTF calculation
+>
+>TODO add formula
+
 Q89. **How is the availability of a system that has a 2oo3 structure with repair calculated?**
 
+>**terms:** availability calculation
+>
+>TODO add formula
+
 Q90. **Set up the calculation for the availability of a system given its Markov Diagram.**
+
+>**terms:** availability calculation
+>
+>TODO add formula
 
 
 ## Chapter 9.4 - Dependable Architectures
