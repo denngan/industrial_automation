@@ -123,9 +123,40 @@ Q78. **What is the difference between persistency and integrity?**
 
 Q79. **Explain why it is a valid assumption to consider the failure rate being constant for reliability calculations.**
 
+>**terms:** failure rate, reliability
+>
+>*reliability:* probability of successful mission execution, function over time
+>
+>*failure rate:* number of failures in interval t. Over time t this follows a bathtub curve with three stages.  
+> * infant mortality: high but decreasing failure rate at the beginning, new hardware fails, design faults, manufacturing problems
+> * useful life: constant, only random failures
+> * end of life: incerasing wear out
+>
+>The infant mortality should not be present anymore in the factory system due to burn tests. Burning tests use new devices a lot until they pass the infant mortality stage. All faulty parts will fail in those tests. So used devices in a plant have all reached their useful life, where they have a constant failure rate. Thus for reliability calculations a constant failure rate can be assumed.
+>
+>**examples:** let lights burn for 100 hours before selling them
+
 Q80. **How can infant mortality be avoided in industrial systems?**
 
+>**terms:** infant mortality
+>
+>*failure rate:* failure rate of population of products over time. Follows a bathtub curve:
+> * infant mortality: new hardware fails due to design failures/flaws or manufacturing problems (unacceptable but avoidable)
+> 
+>*Stress tests:* before massive production; find design weaknesses and material/assembly problems; improvements in design for robustness in different environments: temperature, humidity, vibrations (especially for PLCs)  
+>*Burn-in test:* when leaving factory; ensure functionality before leaving manufacturing plant, run for several hours/days to get to useful life and leave infant mortality, find manufacturing problems
+>
+>**examples:** frist test prototype of a PLC under different conditions to make design better. Then produce many PLCs and run them for some hours to filter all badly produced broducts
+
 Q81. **Explain the notion of failure rate and its relation to the MTTF.**
+
+>**terms:** failure rate, MTTF
+>
+>*failure rate:* lambda(t) - priobability that a good element fails during next time unit
+>*reliability:* probability of device not having failed until time t - R(t) = exp(-lambda * t)
+>*MTTF:* mean time until a failure occurs - Intergral of R(t); tha equals 1/lambda
+>
+>**examples:**
 
 Q82. **Calculate the reliability of a system that depends on a set of N elements.**
 
