@@ -360,4 +360,30 @@ Q98. **Explain the main principles of FMEA and FTA.**
 
 Q99. **What is the difference between FMEA and FMECA?**
 
-Q100. **In the context of safety function, what does SIL mean? What is the highest level?**
+>**terms:** FMEA, FMECA
+>
+>*FMEA:* only provides qualitative analysis (cause effect chain)  
+>
+>*FMECA (failure mode, effects and criticality analysis):* also provides (limited) quantitative information
+each basic failure mode is assigned a failure probability and a failure criticality – if based on the result of the FMECA the system is to be improved (to make it more dependable) the failure modes with the highest probability leading to failures with the highest criticality are considered first.   
+>assign a failure prbability and failure criticality to each basic failure mode. System can then be improved based on FMECA by considering the most probable and critical failure modes first  
+>This adds a criticality grid to the evaluation with criticality levels (1 to 5) and probabilities.
+>
+>**examples:** ... 
+
+Q100. **In the context of safety function, what does SIL mean? What is the highest level?**  
+ 
+>**terms:** SIL
+>
+>*Safety Integrity Level (SIL):* Risk-based approach leading to determination how safe a system is. Is based in the Functional Safety Standard – IEC61508 and applicable to SIF (safety instrumented function)  
+>SIL is a discrete performance measuremt that
+> * indicates the range of maximum acceptable probability of failure of a SIF
+> * analyzes by probability of failure per demand or probability of failure per hour
+>SIL specifies four safety integrity levels (with specified max. failure rates) and defines requirements for each of them.  
+>Ways to determine a plant's SIL:  Safety Layer Matrix, Risk Graph, Layer of Protection Analysis (for each initiating cause, calculate which layers provide protection), Fault Tree Analysis
+>
+>**examples:** ..
+
+
+
+
