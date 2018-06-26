@@ -12,7 +12,7 @@
 
 ### Exam Questions
 
-Q24. **What is a fieldbus, what distinguishes it from an office automation bus and which are the criteria for selecting a fieldbus for a given application?**
+Q24. **What is a fieldbus, what distinguishes it from an office automation bus (data network in an office) and which are the criteria for selecting a fieldbus for a given application?**
 
 >**terms:** fieldbus
 >A fieldbus is a data network interconnecting an automation system: It usually sends small data values(process variables) and has a bounded delay to ensure realtime. It can operate in a harsh environment and must be robust and easily instaled by skilled people. It offers high integrity and availability, uses cock synchronization works over a long range but has mioderate data rates.
