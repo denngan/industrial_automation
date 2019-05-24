@@ -64,7 +64,7 @@ Q4. **List the layers in a control system and their functions. How are the respo
 
 >**terms:** control system
 >
-> ERP (Enterprise Response Planning) - production planning, orders, coordinate sites *months*  
+> ERP (Enterprise Resource Planning) - production planning, orders, coordinate sites *months*  
 > MES (Manufacturing Execution System) - manage resources, workflow, production scheduling, maintainance *days*  
 > Supervision - supervise production, optimize, log, store *minutes*  
 > Group control - control part of plant *seconds*  
